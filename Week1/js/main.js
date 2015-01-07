@@ -42,6 +42,8 @@ var i = 0; // Just making sure the i doesn't return undefined within the array o
 
 chapters = ['When '+user+' was young, he tried to leave behind his past. Instead, '+secondUser+' helped '+user+' understand his life. Believe it or not, '+user+' turned his life upside down very quickly... again. So it was up to '+secondUser+', to save our world. The year was '+year+', and '+secondUser+' had already '+words(i)+' and killed '+fridge+' cyborgs. He had cbecome a serial killer.', 'Little did '+user+' know, that his actions would have a greater effect than he expected. As soon as he found out, '+secondUser+' had already been to the ends of the world. No one could face the wrath of the cyborg serial killer! Often did '+user+' think of all the terrible things he had done. He had '+words(i)+' millions of humans to an underground organization. He couldn\'t believe what he was witnessing. His bestfriend becoming a terror to humanity, he was so proud...','Instead of saving the world, they both ended up becoming the rulers of it. They had '+words(i)+' communities apart, and dismembered their goverments into disabled providences.','\n'+ending+'\n'];
 
+// This loops out the chapter with the words also being pushed into it.
+// If the i == 1 or 2 it'll get it a new line.
 
 for (var i=0;i<chapters.length;i++){
 	if(i==1||i==2){
