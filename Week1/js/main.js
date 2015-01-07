@@ -30,14 +30,13 @@ Here we'll have an array of 4 items, in this case
 we'll use the array to go through the story with a loop.
 */
 
-var i = 0;
-
+// A function we'll use to return some random words into the story
 function words(w){
 	word = ["kicked", "sold", "chopped", "Nope."];
 	return word[w];
 };
 
-var i = 0;
+var i = 0; // Just making sure the i doesn't return undefined within the array of chapters.
 
 chapters = ['When '+user+' was young, he tried to leave behind his past. Instead, '+secondUser+' helped '+user+' understand his life. Believe it or not, '+user+' turned his life upside down very quickly... again. So it was up to '+secondUser+', to save our world. The year was '+year+', and '+secondUser+' had already '+words(i)+' and killed '+fridge+' cyborgs. He had cbecome a serial killer.', 'Little did '+user+' know, that his actions would have a greater effect than he expected. As soon as he found out, '+secondUser+' had already been to the ends of the world. No one could face the wrath of the cyborg serial killer! Often did '+user+' think of all the terrible things he had done. He had '+words(i)+' millions of humans to an underground organization. He couldn\'t believe what he was witnessing. His bestfriend becoming a terror to humanity, he was so proud...','Instead of saving the world, they both ended up becoming the rulers of it. They had '+words(i)+' communities apart, and dismembered their goverments into disabled providences.','\n'+ending+'\n'];
 
