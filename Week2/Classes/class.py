@@ -49,7 +49,7 @@
 class Player(object):
 	def __init__(self):
 		print "Player created"
-		self.color = " "
+		self.color = "Red"
 		self.movement = 2.5
 		self.speed = 1
 		self.alive = 1
