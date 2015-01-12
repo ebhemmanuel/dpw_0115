@@ -48,7 +48,8 @@
 
 class Player(object):
 	def __init__(self):
-		print "Player created"
+		# print "Player created"
+		self.name = "player"
 		self.color = "Red"
 		self.movement = 2.5
 		self.speed = 1
@@ -58,7 +59,7 @@ class Player(object):
 
 class Ghost(object):
 	def __init__(self):
-		self.name = " "
+		self.name = "Boom"
 		self.speed = 2
 		self.ai = 1
 		self.alive = 1
@@ -68,9 +69,43 @@ class Ghost(object):
 # A constructor function runs when you instantiate the object
 # For example:
 # instance = Class()
-pacMan = Player()
-pacMan.color = "Yellow"
-print pacMan.color
+# pacMan = Player()
+# pacMan.color = "Yellow"
+# print pacMan.name
+# Looping through an array of players
+# players = []
+
+# for i in range(1,101,1):
+# 	players.append(Player())
+
+# for i in players:
+# 	print i.name
+
+# class Car(object):
+# 	def __init__(self):
+			# self.door = 0
+			# self.make = " "
+			# self.modle = " "
+			# self.working = True
+			# self.automatic = True
+
+class Car:
+	def __init__(self,make):
+		print "Car Created"
+		self.door = 0
+		self.make = make
+		self.model = " "
+		self.working = True
+		self.automatic = True
+	def start(self):
+		print "My " + self.make + " is working."
+
+# myCar = Car()
+# myCar.make = "Toyota"
+# myCar.start()
+myCar = Car("Toyota").start()
+
+
 #
 # class file is a set of directions
 # or a blueprint
