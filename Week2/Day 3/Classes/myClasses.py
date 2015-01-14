@@ -93,17 +93,22 @@ class Car:
 	def __init__(self,make):
 		print "Car Created"
 		self.door = 0
-		self.make = make
+		self.make = " "
 		self.model = " "
 		self.working = True
 		self.automatic = True
 	def start(self):
-		print "My " + self.make + " is working."
+		if self.working == True:
+			print "My " + self.make + " is working."
+		else:
+			print "My " + self.make + " is a pos."
 
 # myCar = Car()
 # myCar.make = "Toyota"
 # myCar.start()
-myCar = Car("Toyota").start()
+# myCar = Car("Toyota")
+# myCar.working = False
+# myCar.start()
 
 
 #
