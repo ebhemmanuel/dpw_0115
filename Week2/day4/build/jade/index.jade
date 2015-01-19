@@ -1,0 +1,42 @@
+doctype html
+html
+	head
+		title Website title
+		meta(charset="utf-8")
+		meta(description="Website Description")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(href="public/css/bootstrap.min.css" type="text/css" rel="stylesheet")
+		link(href="public/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet")
+		link(href="public/css/main.css" type="text/css" rel="stylesheet")
+
+	body
+		.header.container-fluid
+			.container
+				.name.col-md-6.col-lg-6
+					h1 Company Name
+		.sub-header.container-fluid
+			.container
+				.title
+					ul.list-inline
+						li
+							h4 Sub Header
+						li
+							| |
+						li
+							a(href="#contact")
+								h4.contact-style.button-contact.text-center
+									| Link 1
+						li
+							a(href="download/Barreto_Emmanuel_Resume(online).pdf" target="_blank")
+								h4.contact-style.button-resume.text-center
+									| Link 2
+
+		.content.container-fluid
+			include includes/organisms/_thumbnailpost
+
+		//-Footer
+		//-___________________________
+		include includes/_footer
+		include includes/_js
+
+
