@@ -1,14 +1,18 @@
 class Page:
 	def __init__(self):
 		self.title = "Bob's Beer"
-		self.css = "css/style.css"
+		self.css = "css/main.css"
+		self.description = "Base File"
 		self.head = """
 		<!DOCTYPE html>
 		<html lang="en">
 			<head>
-				<meta charset="UTF-8">
-				<link href="{self.css}" rel="stylesheet" type="text/css"/>
-				<title>{self.title}</title>
+				<meta charset="utf-8">
+		    <meta description="{self.description}">
+		    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+		    <link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+		    <link href="{self.css}" type="text/css" rel="stylesheet">
 			</head>
 			<body>
 		"""
